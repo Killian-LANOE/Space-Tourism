@@ -1,0 +1,16 @@
+$home-bg-mobile: url("Frontend/src/assets/home/background-home-mobile.jpg");
+$home-bg-tablet: url("Frontend/src/assets/home/background-home-tablet.jpg");
+$home-bg-desktop: url("Frontend/src/assets/home/background-home-desktop.jpg");
+
+$color-primary: #d0d6f9;
+$color-secondary: #fff;
+$color-tertiary: #0b0d17;
+
+@mixin setupBG {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #121212;
+}

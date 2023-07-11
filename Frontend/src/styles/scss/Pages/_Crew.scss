@@ -1,0 +1,17 @@
+#Crew {
+  @include setupBG;
+}
+
+//Responsive Tablet
+
+#Crew {
+  @media screen and (min-width: 426px) {
+  }
+}
+
+//Responsive Desktop
+
+#Crew {
+  @media screen and (min-width: 769px) {
+  }
+}

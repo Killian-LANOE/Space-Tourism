@@ -1,0 +1,15 @@
+#Destination {
+  @include setupBG;
+}
+
+#Destination {
+  @media screen and (min-width: 426px) {
+  }
+}
+
+//Responsive Desktop
+
+#Destination {
+  @media screen and (min-width: 769px) {
+  }
+}
