@@ -1,10 +1,20 @@
+//background image
+
 $home-bg-mobile: url("Frontend/src/assets/home/background-home-mobile.jpg");
 $home-bg-tablet: url("Frontend/src/assets/home/background-home-tablet.jpg");
 $home-bg-desktop: url("Frontend/src/assets/home/background-home-desktop.jpg");
 
+$destination-bg-mobile: url("Frontend/src/assets/destination/background-destination-mobile.jpg");
+$destination-bg-tablet: url("Frontend/src/assets/destination/background-destination-tablet.jpg");
+$destination-bg-desktop: url("Frontend/src/assets/destination/background-destination-desktop.jpg");
+
+//Colors
+
 $color-primary: #d0d6f9;
 $color-secondary: #fff;
 $color-tertiary: #0b0d17;
+
+//Mixins
 
 @mixin setupBG {
   display: flex;

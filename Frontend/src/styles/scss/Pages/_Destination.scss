@@ -1,9 +1,58 @@
 #Destination {
-  @include setupBG;
+  min-height: 100vh;
+  width: auto;
+  padding-top: 5em;
+  background-image: $destination-bg-mobile;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img {
+      height: 256px;
+      width: 256px;
+    }
+
+    &--choice {
+      margin: auto;
+      width: 80%;
+      display: flex;
+      justify-content: space-evenly;
+
+      button {
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        background-color: transparent;
+        &:active {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .Destination--content--infos {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
 }
+
+//Responsive Tablet
 
 #Destination {
   @media screen and (min-width: 426px) {
+    background-image: $destination-bg-tablet;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -11,5 +60,8 @@
 
 #Destination {
   @media screen and (min-width: 769px) {
+    background-image: $destination-bg-desktop;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
