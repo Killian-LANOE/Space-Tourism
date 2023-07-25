@@ -1,10 +1,24 @@
 #Destination {
-  min-height: 100vh;
+  min-height: calc(100vh - 5em);
   width: auto;
   padding-top: 5em;
   background-image: $destination-bg-mobile;
   background-repeat: no-repeat;
   background-size: cover;
+
+  &--title {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2.7px;
+    font-family: $font-tertiary;
+
+    span {
+      padding-right: 10px;
+      font-family: $font-tertiary;
+      font-weight: 700;
+      opacity: 0.25;
+    }
+  }
 
   &--content {
     display: flex;
@@ -13,9 +27,34 @@
     align-items: center;
     text-align: center;
 
+    h1 {
+      margin-top: 2rem;
+      text-transform: uppercase;
+      font-size: 56px;
+      font-weight: 400;
+    }
+
     img {
-      height: 256px;
-      width: 256px;
+      height: 170px;
+      width: 170px;
+      margin: 2em 0;
+    }
+
+    p {
+      margin: auto;
+      width: 85%;
+      font-family: $font-secondary;
+      line-height: 25px;
+      font-size: 15px;
+      color: $color-primary;
+    }
+
+    &--separation {
+      height: 1px;
+      width: 85%;
+      background-color: $color-primary;
+      opacity: 0.3;
+      margin: 2rem 0;
     }
 
     &--choice {
@@ -25,12 +64,16 @@
       justify-content: space-evenly;
 
       button {
-        font-size: 18px;
-        font-weight: bold;
+        font-size: 14px;
+        font-family: $font-tertiary;
+        letter-spacing: 2.36px;
         border: none;
         background-color: transparent;
-        &:active {
-          text-decoration: underline;
+        color: $color-primary;
+        &:hover {
+          color: $color-secondary;
+          text-decoration: underline 3px;
+          text-underline-offset: 8px;
         }
       }
     }
@@ -38,9 +81,16 @@
     .Destination--content--infos {
       display: flex;
       flex-direction: column;
+      font-size: 14px;
+      font-family: $font-tertiary;
+      letter-spacing: 2.36px;
 
       span {
-        font-weight: bold;
+        margin-top: 12px;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        font-size: 28px;
+        letter-spacing: normal;
       }
     }
   }

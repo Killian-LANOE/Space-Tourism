@@ -7,20 +7,25 @@ function Destination() {
 
   return (
     <div id="Destination">
+      <p id="Destination--title">
+        <span>01</span> PICK YOUR DESTINATION
+      </p>
       <div id="Destination--content">
         <img src={destination[planet].images.png}></img>
         <div id="Destination--content--choice">
-          <button onClick={() => setPlanet(0)}>Moon</button>
-          <button onClick={() => setPlanet(1)}>Mars</button>
-          <button onClick={() => setPlanet(2)}>Europa</button>
-          <button onClick={() => setPlanet(3)}>Titan</button>
+          <button onClick={() => setPlanet(0)}>MOON</button>
+          <button onClick={() => setPlanet(1)}>MARS</button>
+          <button onClick={() => setPlanet(2)}>EUROPA</button>
+          <button onClick={() => setPlanet(3)}>TITAN</button>
         </div>
         <h1>{destination[planet].name}</h1>
         <p>{destination[planet].description}</p>
-        <p className="Destination--content--info">
+
+        <div id="Destination--content--separation"></div>
+        <p className="Destination--content--infos">
           AVG. DISTANCE <span>{destination[planet].distance}</span>
         </p>
-        <p className="Destination--content--info">
+        <p className="Destination--content--infos">
           EST. TRAVEL TIME <span>{destination[planet].travel}</span>
         </p>
       </div>
