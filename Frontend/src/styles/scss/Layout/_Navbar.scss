@@ -31,16 +31,24 @@ nav {
       gap: 32px;
       height: 50%;
       margin-top: 12px;
-      width: auto;
+      width: 100%;
 
       .menu--open--content--title {
         display: flex;
         height: fit-content;
         margin-left: 32px;
         font-weight: 100;
+
         &:hover {
           text-decoration: underline;
-          text-underline-offset: 4px;
+          text-underline-position: under;
+
+          &::after {
+            content: " ";
+            background-color: white;
+            position: absolute;
+            right: 0;
+          }
         }
 
         strong {
