@@ -101,8 +101,6 @@
 #Destination {
   @media screen and (min-width: 426px) {
     background-image: $destination-bg-tablet;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 }
 
@@ -111,7 +109,5 @@
 #Destination {
   @media screen and (min-width: 769px) {
     background-image: $destination-bg-desktop;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 }
