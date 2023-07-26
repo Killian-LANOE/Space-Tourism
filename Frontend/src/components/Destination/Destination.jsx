@@ -11,7 +11,10 @@ function Destination() {
         <span>01</span> PICK YOUR DESTINATION
       </p>
       <div id="Destination--content">
-        <img src={destination[planet].images.png}></img>
+        <img
+          src={destination[planet].images.png}
+          alt={`image of the planet ${destination[planet].name}`}
+        ></img>
         <div id="Destination--content--choice">
           <button onClick={() => setPlanet(0)}>MOON</button>
           <button onClick={() => setPlanet(1)}>MARS</button>
