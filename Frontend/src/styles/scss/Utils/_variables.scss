@@ -12,6 +12,10 @@ $crew-bg-mobile: url("Frontend/src/assets/crew/background-crew-mobile.jpg");
 $crew-bg-tablet: url("Frontend/src/assets/crew/background-crew-tablet.jpg");
 $crew-bg-desktop: url("Frontend/src/assets/crew/background-crew-desktop.jpg");
 
+$technology-bg-mobile: url("Frontend/src/assets/technology/background-technology-mobile.jpg");
+$technology-bg-tablet: url("Frontend/src/assets/technology/background-technology-tablet.jpg");
+$technology-bg-desktop: url("Frontend/src/assets/technology/background-technology-desktop.jpg");
+
 //Colors
 
 $color-primary: #d0d6f9;
@@ -23,14 +27,3 @@ $color-tertiary: #0b0d17;
 $font-primary: "Bellefair";
 $font-secondary: "Barlow";
 $font-tertiary: "Barlow Condensed";
-
-//Mixins
-
-@mixin setupBG {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  background-color: #121212;
-}
