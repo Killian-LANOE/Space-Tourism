@@ -1,4 +1,11 @@
-function navbar() {
+function Navbar() {
+  const menuPages = [
+    { text: "HOME", link: "/" },
+    { text: "DESTINATION", link: "/Destination" },
+    { text: "CREW", link: "/Crew" },
+    { text: "TECHNOLOGY", link: "/Technology" },
+  ];
+
   function handleMenu() {
     const menu = document.querySelector("aside");
     menu.classList.toggle("menu--visible");
@@ -24,18 +31,17 @@ function navbar() {
           </button>
 
           <div id="menu--open--content">
-            <a className="menu--open--content--title" href="/">
-              <strong>00</strong> HOME
-            </a>
-            <a className="menu--open--content--title" href="/Destination">
-              <strong>01</strong> DESTINATION
-            </a>
-            <a className="menu--open--content--title" href="/Crew">
-              <strong>02</strong> CREW
-            </a>
-            <a className="menu--open--content--title" href="Technology">
-              <strong>03</strong> TECHNOLOGY
-            </a>
+            {menuPages.map((page, index) => (
+              <a
+                key={index}
+                className={`menu--open--content--title ${
+                  window.location.pathname === page.link ? "active" : ""
+                }`}
+                href={page.link}
+              >
+                <strong>0{index}</strong> {page.text}
+              </a>
+            ))}
           </div>
         </aside>
       </div>
@@ -43,4 +49,4 @@ function navbar() {
   );
 }
 
-export default navbar;
+export default Navbar;

@@ -50,11 +50,6 @@
         background-color: transparent;
         border: 1px solid rgba(255, 255, 255, 0.25);
         border-radius: 50%;
-
-        &:hover {
-          background-color: white;
-          color: black;
-        }
       }
     }
 
@@ -75,6 +70,10 @@
       color: $color-primary;
       line-height: 25px;
     }
+  }
+  .Active {
+    background-color: white;
+    color: black;
   }
 }
 

@@ -3,7 +3,13 @@ import { useState } from "react";
 
 function Crew() {
   const [person, setPerson] = useState(0);
+  const [active, setActive] = useState(0);
   const crew = data.crew;
+
+  function handleClick(e) {
+    setPerson(e.target.value);
+    setActive(e.target.value);
+  }
 
   return (
     <div id="Crew">
@@ -18,10 +24,26 @@ function Crew() {
         <div id="Crew--content--separation"></div>
 
         <div id="Crew--content--menu">
-          <button onClick={() => setPerson(0)}></button>
-          <button onClick={() => setPerson(1)}></button>
-          <button onClick={() => setPerson(2)}></button>
-          <button onClick={() => setPerson(3)}></button>
+          <button
+            value={0}
+            onClick={handleClick}
+            className={active == 0 ? "Active" : ""}
+          ></button>
+          <button
+            value={1}
+            onClick={handleClick}
+            className={active == 1 ? "Active" : ""}
+          ></button>
+          <button
+            value={2}
+            onClick={handleClick}
+            className={active == 2 ? "Active" : ""}
+          ></button>
+          <button
+            value={3}
+            onClick={handleClick}
+            className={active == 3 ? "Active" : ""}
+          ></button>
         </div>
 
         <p id="Crew--content--role">{crew[person].role}</p>
