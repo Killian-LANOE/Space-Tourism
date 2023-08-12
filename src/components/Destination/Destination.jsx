@@ -1,5 +1,5 @@
 import { useState } from "react";
-import data from "../../../../Backend/data.json";
+import data from "../../../Backend/data.json";
 
 function Destination() {
   const [planet, setPlanet] = useState(0);

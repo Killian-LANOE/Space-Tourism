@@ -1,4 +1,4 @@
-import data from "../../../../Backend/data.json";
+import data from "../../../Backend/data.json";
 import { useState } from "react";
 
 function Crew() {
@@ -12,16 +12,18 @@ function Crew() {
   }
 
   return (
-    <div className="h-screen bg-crew-mobile bg-cover bg-no-repeat text-white overflow-hidden md:bg-crew-tablet">
-      <div className="h-screen bg-zinc-900 bg-opacity-60 pt-24 md:pt-36">
+    <div className="h-screen bg-crew-mobile bg-cover bg-no-repeat text-white md:bg-crew-tablet md:overflow-hidden">
+      <div className="h-screen bg-zinc-900 bg-opacity-60 pt-24 md:pt-32">
         <p className="text-center font-other tracking-[2.7px] mb-6 md:text-left md:text-xl md:mb-8 md:tracking-[3.37px]">
           <span className="opacity-50 pl-11">02</span> MEET YOUR CREW
         </p>
-        <div className="flex flex-col text-center md:Crew--Content px-6 md:px-[155px] md:flex-col-reverse">
+        <div className="Crew--Content flex flex-col text-center px-6 md:px-[155px] md:flex-col-reverse">
           <img
             src={crew[person].images.webp}
             alt={`image of ${crew[person].name}`}
-            className="h-[222px] w-auto mx-auto md:min-h-[572px] md:h-[572px] md:w-auto"
+            className={`h-[222px] w-auto mx-auto ${
+              window.innerHeight < 855 ? "Crew--Img" : "md:h-[572px]"
+            }`}
           ></img>
 
           <div className="h-px w-11/12 opacity-20 bg-white mb-8 md:hidden"></div>
