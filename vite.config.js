@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000,
-    host: 3000,
   },
+
   base: "/Space-Tourism/",
 });

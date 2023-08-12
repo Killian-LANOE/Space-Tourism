@@ -1,5 +1,5 @@
 function Accueil() {
-  const handleClick = () => (window.location = "/Destination");
+  const handleClick = () => (window.location = "Destination");
 
   return (
     <div>
