@@ -19,12 +19,15 @@ function Navbar() {
       <div className="grid h-20 w-11/12 m-auto grid-flow-col items-center justify-between">
         <img
           id="logo"
-          src="src/assets/shared/logo.svg"
+          src="./assets/shared/logo.svg"
           alt="logo of space tourism"
           className="mt-6 ml-2"
         ></img>
         <button className="h-6 w-6 md:hidden " onClick={handleMenu}>
-          <img src="src/assets/shared/icon-hamburger.svg"></img>
+          <img
+            src="./assets/shared/icon-hamburger.svg"
+            alt="button to open menu"
+          ></img>
         </button>
       </div>
 
@@ -37,7 +40,10 @@ function Navbar() {
             className="absolute right-6 top-8 md:hidden "
             onClick={handleMenu}
           >
-            <img src="src/assets/shared/icon-close.svg"></img>
+            <img
+              src="./assets/shared/icon-close.svg"
+              alt="button to close menu"
+            ></img>
           </button>
 
           <div className="flex flex-col h-3/5 justify-center gap-8 ml-8 tracking-[2.7px] md:flex-row md:items-center md:h-24 md:w-2/3 md:mx-auto lg:ml-38 lg:gap-12">
