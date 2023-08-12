@@ -1,9 +1,9 @@
 function Navbar() {
   const menuPages = [
     { text: "HOME", link: "/" },
-    { text: "DESTINATION", link: "/Destination" },
-    { text: "CREW", link: "/Crew" },
-    { text: "TECHNOLOGY", link: "/Technology" },
+    { text: "DESTINATION", link: "Space-Tourism/Destination" },
+    { text: "CREW", link: "Space-Tourism//Crew" },
+    { text: "TECHNOLOGY", link: "Space-Tourism/Technology" },
   ];
 
   function handleMenu() {
