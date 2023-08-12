@@ -8,4 +8,5 @@ export default defineConfig({
     port: 3000,
     host: 3000,
   },
+  base: "/Space-Tourism/",
 });
