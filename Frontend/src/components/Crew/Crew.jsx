@@ -12,20 +12,21 @@ function Crew() {
   }
 
   return (
-    <div className="min-h-screen bg-crew-mobile bg-cover bg-no-repeat text-white">
-      <div className="min-h-screen mx-auto flex flex-col text-center items-center pt-24 bg-zinc-900 bg-opacity-25">
-        <p className="font-other tracking-[2.7px] mb-8">
-          <span className="mr-4 opacity-25">02</span> MEET YOUR CREW
+    <div className="h-screen bg-crew-mobile bg-cover bg-no-repeat text-white overflow-hidden md:bg-crew-tablet">
+      <div className="h-screen bg-zinc-900 bg-opacity-60 pt-24 md:pt-36">
+        <p className="text-center font-other tracking-[2.7px] mb-6 md:text-left md:text-xl md:mb-8 md:tracking-[3.37px]">
+          <span className="opacity-50 pl-11">02</span> MEET YOUR CREW
         </p>
-        <div>
+        <div className="flex flex-col text-center md:Crew--Content px-6 md:px-[155px] md:flex-col-reverse">
           <img
-            src={crew[person].images.png}
+            src={crew[person].images.webp}
             alt={`image of ${crew[person].name}`}
-            className="h-[222px] w-auto mx-auto"
+            className="h-[222px] w-auto mx-auto md:min-h-[572px] md:h-[572px] md:w-auto"
           ></img>
-          <div className="h-px w-11/12 opacity-20 bg-white mb-8 mx-auto"></div>
 
-          <div className="flex justify-center gap-5 mb-8">
+          <div className="h-px w-11/12 opacity-20 bg-white mb-8 md:hidden"></div>
+
+          <div className="flex justify-center gap-5 mb-8 md:mt-10">
             <button
               value={0}
               onClick={handleClick}
@@ -64,13 +65,17 @@ function Crew() {
             ></button>
           </div>
 
-          <p className="font-title uppercase opacity-50">{crew[person].role}</p>
-          <h1 className="font-title uppercase text-2xl font-normal mb-6">
-            {crew[person].name}
-          </h1>
-          <p className="font-text leading-[25px] text-base text-primary px-9 pb-8">
-            {crew[person].bio}
-          </p>
+          <div className="flex flex-col">
+            <p className="font-title uppercase opacity-50 mb-1 md:text-2xl md:mb-0">
+              {crew[person].role}
+            </p>
+            <h1 className="font-title uppercase text-2xl font-normal mb-4 md:text-[40px] md:leading-normal md:mb-2">
+              {crew[person].name}
+            </h1>
+            <p className="font-text leading-[25px] text-[15px] text-primary md:text-base md:leading-7 ">
+              {crew[person].bio}
+            </p>
+          </div>
         </div>
       </div>
     </div>
