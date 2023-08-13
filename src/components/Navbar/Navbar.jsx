@@ -19,13 +19,13 @@ function Navbar() {
       <div className="grid h-20 w-11/12 m-auto grid-flow-col items-center justify-between">
         <img
           id="logo"
-          src="./src/assets/logo.svg"
+          src="./src/assets/shared/logo.svg"
           alt="logo of space tourism"
-          className="mt-6 ml-2"
+          className="mt-2 ml-2"
         ></img>
         <button className="h-6 w-6 md:hidden " onClick={handleMenu}>
           <img
-            src="./assets/icon-hamburger.svg"
+            src="./src/assets/shared/icon-hamburger.svg"
             alt="button to open menu"
           ></img>
         </button>

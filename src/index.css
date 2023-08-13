@@ -77,3 +77,20 @@
     }
 
 }
+
+@media screen and (min-width:1024px) {
+    .Crew--Active{
+        height: 15px ;
+        width: 15px;
+    }
+    .Crew--Text--Start{
+        justify-content: start;
+    }
+
+    .Technology--Active{
+        height: 80px;
+        width: 80px;
+        font-size: 32px;
+    }
+    
+}
